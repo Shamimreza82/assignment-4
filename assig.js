@@ -1,19 +1,19 @@
 
 // problem (Solved)
 
-// function cubeNumber(number) {
-//     if (typeof number !== "number") {
-//         return "Please provide a number"
-//     }
-//     const cube = number;
-//     const power = 3;
-//     const output = Math.pow(cube, power)
-//     return output;
-// }
+function cubeNumber(number) {
+    if (typeof number !== "number") {
+        return "Please provide a number"
+    }
+    const cube = number;
+    const power = 3;
+    const output = Math.pow(cube, power)
+    return output;
+}
 
-// const numbers = "3";
-// const cubeNumber1 = cubeNumber(numbers);
-// console.log(cubeNumber1);
+const numbers = "3";
+const cubeNumber1 = cubeNumber(numbers);
+console.log(cubeNumber1);
 
 
 //--------------------------------------------------------------------------------------
@@ -22,25 +22,25 @@
 
 
 
-//  function matchFinder(string1, string2){
-//     if (typeof string1 !== "string" || typeof string2 !== "string"){
-//         return "please provide valid input"
-//     }
+ function matchFinder(string1, string2){
+    if (typeof string1 !== "string" || typeof string2 !== "string"){
+        return "please provide valid input"
+    }
 
-//     if (string1.includes(string2)){
-//         return true; 
-//     }
-//     else {
-//         return false; 
-//     }
-//  }
+    if (string1.includes(string2)){
+        return true; 
+    }
+    else {
+        return false; 
+    }
+ }
 
 
-// const string1 = "John Doe"; 
-// const string2 = "ohn"
+const string1 = "John Doe"; 
+const string2 = "ohn"
 
-// const strings = matchFinder(); 
-// console.log(strings);
+const strings = matchFinder(); 
+console.log(strings);
 
 
 
@@ -114,5 +114,29 @@
 //--------------------------------------------------------------------------------------
 
 
+
+// const arr = [3, "5"];
+// const arrSort = sortMaker(arr);
+// // console.log(arrSort);
+
+
 function sortMaker(arr) {
+    let sortarr = [];
+    for( let items of arr){ 
+        if (items == 0){
+            return "Invalid Input"
+        }
+        else if (items !== items){
+            return "equal"
+        }  
+        else if (items % 2 == 0 || items % 2 == 1){
+            sortarr.push(items);
+            return sortarr; 
+        } 
+    }
+
 }
+
+const arr = [4, 3];
+const arrSort = sortMaker(arr);
+console.log(arrSort);
