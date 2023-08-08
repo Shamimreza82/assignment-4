@@ -42,19 +42,11 @@
 //---------------------------------------------------------------------------
 
 // function findAddress(obj) {
-
-//     if (obj.street === undefined) {
-//         obj.street = '__';
-//       }
-
-//       if (obj.house === undefined) {
-//         obj.h = '__';
-//       }
-//     // const findAddress = Object.values(obj);
-//     return obj; 
+   
+//         const findAdd = Object.values(obj);
+//         return findAdd;  
 
 // }
-
 
 // const obj = {
 //     street: 10,
@@ -64,6 +56,26 @@
 
 // const address = findAddress(obj); 
 // console.log (address); 
+
+
+
+function findAddress(obj) {
+    const findAdd = Object.values(obj)
+    .map(value => value === undefined || value === "__" ? "__" : value);
+    return findAdd;
+}
+
+const obj = {
+    street: 10,
+    house: "--",
+    society: "Earth Perfect"
+    
+}
+
+const address = findAddress(obj); 
+console.log(address);
+
+
 
 
 //---------------------------------------------------------------------------
@@ -101,3 +113,20 @@
 
 
 //---------------------------------------------------------------------------
+
+
+// function sortMaker(arr) {
+//     if(arr[0] < 0 || arr[1] < 0){
+//         return "Invalid Input"
+//     }
+//     arr.sort((a, b) => b - a);
+//     if (arr[0] === arr[1]) {
+//         return "equal";
+//     } else {
+//         return arr;
+//     }
+// }
+
+// const arr = [4, 2];
+// const arrSort = sortMaker(arr);
+// console.log(arrSort);
