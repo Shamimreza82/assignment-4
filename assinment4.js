@@ -44,7 +44,7 @@
 //     const house = obj.house || '__';
 //     const society = obj.society || '__';
 
-//     return `${street},${house},${society}`;
+//     return street, house, society;
 // }
 
 // const obj = {
@@ -85,11 +85,11 @@
 
 
 
-const arr = [];
-const number = 10;
+// const arr = [];
+// const number = 10;
 
-const canpay1 = canPay(arr, number);
-console.log(canpay1);
+// const canpay1 = canPay(arr, number);
+// console.log(canpay1);
 
 
 
@@ -113,3 +113,8 @@ console.log(canpay1);
 // const arr = [4, -2];
 // const arrSort = sortMaker(arr);
 // console.log(arrSort);
+
+
+
+
+
